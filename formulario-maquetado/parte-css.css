@@ -190,6 +190,10 @@ select {
     nav img {
         left: 8%;
     }
+
+    form{
+        width: 70%;
+    }
    
 }
 
@@ -204,7 +208,10 @@ select {
 
         font-size: 17px;
     }
-
+     
+    form{
+        width: 70%;
+    }
    
 }
 
@@ -246,6 +253,10 @@ select {
 
     #check:checked ~ label #cancel{
         display: block;
+    }
+
+    form{
+        width: 70%;
     }
   
 }
