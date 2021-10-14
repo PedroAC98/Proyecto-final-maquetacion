@@ -166,7 +166,7 @@
 
 
 .card1 {
-    background-image: url(/assets/IMG-CARDS/mountain.jpg);
+    background-image: url(../assets/IMG-CARDS/mountain.jpg);
     background-size: cover;
     background-color: black;
     opacity: 0.9;
@@ -175,7 +175,7 @@
 
 
 .card2 {
-    background-image: url(/assets/IMG-CARDS/lake.jpg);
+    background-image: url(../assets/IMG-CARDS/lake.jpg);
     background-size: cover;
     background-color: black;
     opacity: 0.9;
@@ -184,7 +184,7 @@
 
 
 .card3 {
-    background-image: url(/assets/IMG-CARDS/ocean.jpg);
+    background-image: url(../assets/IMG-CARDS/ocean.jpg);
     background-size: cover;
     background-color: black;
     opacity: 0.9;
