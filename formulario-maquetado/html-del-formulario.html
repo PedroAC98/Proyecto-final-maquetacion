@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parte-css.css">
+    <title>Formulario</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</head>
+
+
+<body>
+     
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="logo.svg">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Board</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#"><img src="social-media.jpg"></a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <form action="enviar.html" method="get">
+        <h2>Formulario de Contacto</h2>
+        <p>Nombre</p>
+        <input type="text" name="Nombre" placeholder="Introduce tu nombre" required>
+        <p>Email</p>
+        <input type="text" name="Email" placeholder="Introduce tu Email" required>
+        <p>Edad</p>
+        <input type="text" name="Edad" placeholder="Introduce edad, debe ser mayor de edad" required>
+
+        <p>
+
+            ¿Recomendaría esta web a un conocido?:
+
+            <input type="radio" name="conocido?" value="tiempocompleto"> Definitivamente sí
+
+            <input type="radio" name="conocido?" value="mediodia"> Quizás
+
+            <input type="radio" name="conocido?" value="sinempleo"> No estoy seguro
+
+        </p>
+
+        <p>¿Que recomendaciones le gustaría recibir? (Marca todas las que apliquen)
+        </p>
+
+        <div class="checkboxs">
+            <div>
+                <input type="checkbox" id="apliquen" name="proyectos" checked>
+                <label for="Proyectos front-end">Proyectos front-end</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="apliquen" name="proyectos">
+                <label for="Proyectos back-end">Proyectos back-end</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="apliquen" name="social">
+                <label for="Social media">Social media (Marketing)</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="apliquen" name="videjuegos">
+                <label for="videjuegos">Desarrollo videojuegos</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="apliquen" name="tutoriales">
+                <label for="tutoriales">Turoriales UX/UI</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="apliquen" name="otros">
+                <label for="otros">otros</label>
+            </div>
+        </div>
+
+
+        <p>
+
+            ¿Que rol describe mejor tu situación actual?:
+
+            <select name="¿Que rol describe mejor tu situación actual?" required>
+
+                <option>Estudiante</option>
+
+                <option>Trabajo a tiempo completo</option>
+
+                <option>Freelance</option>
+
+                <option>Buscando trabajo</option>
+
+            </select>
+
+        </p>
+        <p>¿Cuando preferirías que te contactásemos?</p>
+
+        <input type="datetime-local" id="meeting-time" name="meeting-time" value="2022-01-01"
+            min="2022-01-01" max="2050-12-30" required>
+
+        <p>¿Otros comentarios o sugerencias?
+        </p>    
+        <textarea name="¿Otro comentario o sugerencia?" placeholder="Introduzca sus comentarios"></textarea>
+        
+        <input type="submit" value="Enviar" id="boton">
+
+    </form>
+</body>
+
+</html>
