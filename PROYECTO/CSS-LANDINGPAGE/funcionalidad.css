@@ -713,6 +713,11 @@
     }
 }
 
+.circle__mostpopular {
+    position: absolute;
+    left: 250px;
+}
+
 
 .footer {
     width: 100%;
