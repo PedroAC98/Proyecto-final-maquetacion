@@ -19,14 +19,14 @@
 .header__hamburguesa-icono {
     display: none;
     position: relative;
-    left: 55%;
+    left: 45%;
     font-size: 2rem;
 }
 
 .header__hamburguesa-icono__x {
     display: none;
     position: relative;
-    left: 55%;
+    left: 45%;
     font-size: 3rem;
 }
 
