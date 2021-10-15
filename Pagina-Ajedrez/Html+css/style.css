@@ -9,6 +9,129 @@
     src: url(../Font/Oswald-VariableFont_wght.ttf);
 }
 
+.header__img {
+    width: 7rem;
+}
+.header__hamburguesa {
+    display: none;
+}
+
+.header__hamburguesa-icono {
+    display: none;
+    position: relative;
+    left: 55%;
+    font-size: 2rem;
+}
+
+.header__hamburguesa-icono__x {
+    display: none;
+    position: relative;
+    left: 55%;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid;
+    border-color: orange;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+}
+
+.header__nav {
+    display: inline-flex;
+}
+
+.header__nav-links {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #1b1c20;
+}
+
+.header__nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+}
+
+
+/* hover para los enlaces de navegacion */
+
+.header__nav-container:hover {
+    background-color: #1b1c20;
+}
+
+.header__nav-container:hover>.header__nav-links {
+    color: white;
+    text-decoration: underline;
+}
+
+.header__logos {
+    display: flex;
+    margin: 1rem;
+}
+
+.header__logos-imagen {
+    background-size: cover;
+    margin: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: black 1rem;
+}
+
+
+
+.header__logos-imagen:hover {
+    transform: scale(1.25);
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+}
+
+
+@media (max-width: 1044px) {
+    
+    .header {
+        display: inline-block;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__logos {
+        display: none;
+        margin: 0;
+    }
+    .header__hamburguesa {
+        display: inline;
+        visibility: hidden;
+    }
+    .header__hamburguesa-icono {
+        display: inline;
+    }
+    .header__hamburguesa:checked~.header__nav {
+        display: block;
+    }
+    .header__hamburguesa:checked~.header__logos {
+        display: inline-flex;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono__x {
+        display: inline;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono {
+        display: none;
+    }
+}
+
+
 .container__main{
     display: flex;
     justify-content: center;
@@ -24,7 +147,7 @@
     flex-wrap: wrap;
     width: 9rem;
     height: 9rem;
-    border: 20px solid #333333 ;
+    border: 10px solid #333333 ;
     justify-content: center;
     
 
@@ -44,7 +167,7 @@
 }
 .container__casilla{
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     vertical-align: middle;
     width: 12.5%;
     height: 12.5%;
@@ -107,6 +230,7 @@
     .container__tablero{
         width: 23rem;
         height: 23rem;
+        border: 20px solid #333333 ;
         
     }
     .container__casilla{
@@ -119,6 +243,7 @@
     .container__tablero{
         width: 30rem;
         height: 30rem;
+        border: 25px solid #333333 ;
         
     }
     .container__casilla{
@@ -131,7 +256,7 @@
     .container__tablero{
         width: 35rem;
         height: 35rem;
-        
+        border: 35px solid #333333 ;
     }
     .container__casilla{
         font-size: 2.7rem;
